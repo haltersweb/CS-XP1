@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="2325px" height="459px" viewBox="0 0 2325 459" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 17 Copy 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50.2632976%" fx="50%" fy="50.2632976%" r="39.677768%" id="radialGradient-1">
+            <stop stop-color="#36A1DB" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#36A1DB" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="xtv_view_pre-authentication-(1920)-copy-2" sketch:type="MSArtboardGroup" transform="translate(-285.000000, 0.000000)" fill="url(#radialGradient-1)">
+            <path d="M1448.5,497 C2263.94843,497 2925,248.294179 2925,-58.5 C2925,-365.294179 2263.94843,-614 1448.5,-614 C633.051567,-614 -28,-365.294179 -28,-58.5 C-28,248.294179 633.051567,497 1448.5,497 Z" id="Oval-17-Copy-4" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

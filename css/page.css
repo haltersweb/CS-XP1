@@ -1,0 +1,103 @@
+/* Page component structure
+---------------------------------------- */
+.container {
+  background: url('../images/bknd-top.svg') no-repeat center -50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15px;
+    right: -15px;
+}
+.nav-area {
+  height: 60px;
+  background-color: #000;
+}
+.page-wrapper {
+  width: 80%;
+  margin: 0 auto 10ex;
+  }
+.xfinity-logo {
+    display: block;
+    width: 115px;
+    height: 43px;
+    margin: 2ex auto 0;
+  fill: #fff;
+    stroke: none;
+}
+.tv-interface {
+  margin: 4ex auto;
+    display: -webkit-flex;
+    display: flex;
+    width: 75vw;
+    height: 49vw;
+    background: url('../images/samsung.png') no-repeat 0;
+    background-size: 100%;
+}
+.tv-show {
+    background: transparent url('') no-repeat center 0;
+    width: 97.5%;
+    background-size: 100%;
+    margin: 1.1vw;
+}
+.tv-show.golf {
+    background-image: url('../images/golf.jpg') ;
+}
+.tv-show img {
+  display: none;
+}
+[aria-controls="youWin"] {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+.modal.badge-announcement {
+  overflow: hidden;
+}
+.badge-stats {
+  overflow: hidden;
+  float: left;
+  width: 35%;
+  padding-right: 7%;
+  text-align: center;
+}
+.badge-info {
+  overflow: hidden;
+}
+.badge-icon {
+  margin-bottom: 1.5ex;
+}
+.xr-ll-drawer {
+  position: absolute;
+  //right: -200px;
+  top: 0;
+}
+.xr-ll-device {
+  position: relative;
+  width: 171px;
+  height: 600px;
+  padding: 39px 23px 51px 27px;
+  background: transparent url('../images/xr11.png') left top no-repeat;
+  background-size: contain;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.toggle-xr-11 {
+  position: absolute;
+  left: -1em;
+  top: 50%;
+  height: 5ex;
+  width: 2em
+
+}
+.xr-11-btn {
+    width: 32px;
+    height: 25px;
+    margin-right: 6px;
+}
+
+
+
