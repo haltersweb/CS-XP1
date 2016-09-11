@@ -75,15 +75,9 @@
   position: relative;
   width: 171px;
   height: 600px;
-  padding: 39px 23px 51px 27px;
+  padding: 40px 29px 51px 27px;
   background: transparent url('../images/xr11.png') left top no-repeat;
   background-size: contain;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
 }
 .toggle-xr-11 {
   position: absolute;
@@ -91,13 +85,52 @@
   top: 50%;
   height: 5ex;
   width: 2em
-
+}
+.xr-11-quadrant {
+  width: 100%;
+  height: 30px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-content: space-between;
+  align-content: space-between;
+}
+.xr-11-quadrant:nth-child(1) {
+    height: 99px;
+    margin-bottom: 14px;
+}
+.xr-11-quadrant:nth-child(2) {
+    height: 81px;
+    margin-bottom: 13px;
+}
+.xr-11-quadrant:nth-child(3) {
+  height: 105px;
+    margin-bottom: 11px;
+}
+.xr-11-quadrant:nth-child(4) {
+      height: 47px;
+    margin-bottom: 9px;
+}
+.xr-11-quadrant:nth-child(5) {
+height: 116px;
 }
 .xr-11-btn {
     width: 32px;
-    height: 25px;
-    margin-right: 6px;
+    height: 23px;
+    background: rgba(256, 256, 256, .5);
+    border: 0;
 }
-
+.xr-11-quadrant:nth-child(2) .xr-11-btn {
+  height: 18px;
+}
+.xr-11-quadrant:nth-child(4) .xr-11-btn {
+  height: 18px;
+}
+.xr-11-quadrant:nth-child(4) .xr-11-btn:nth-child(3) ~ .xr-11-btn {
+  width: 22px;
+}
 
 
