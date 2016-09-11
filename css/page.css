@@ -120,11 +120,27 @@ height: 116px;
 .xr-11-btn {
     width: 32px;
     height: 23px;
-    background: rgba(256, 256, 256, .5);
+    margin: 0;
+    padding: 0;
     border: 0;
+    background: transparent;
 }
 .xr-11-quadrant:nth-child(2) .xr-11-btn {
   height: 18px;
+}
+.xr-11-quadrant:nth-child(3) .xr-11-btn {
+  height: 31px;
+}
+.xr-11-quadrant:nth-child(3) .xr-11-btn:first-child,
+.xr-11-quadrant:nth-child(3) .xr-11-btn:last-child {
+  width: 100%;
+}
+.xr-11-quadrant:nth-child(3) .xr-11-btn:nth-child(2),
+.xr-11-quadrant:nth-child(3) .xr-11-btn:nth-child(4) {
+  width: 32%;
+}
+.xr-11-quadrant:nth-child(3) .xr-11-btn:nth-child(3) {
+  width: 36%;
 }
 .xr-11-quadrant:nth-child(4) .xr-11-btn {
   height: 18px;
