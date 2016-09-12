@@ -9,7 +9,7 @@
     right: -15px;
 }
 .nav-area {
-  height: 60px;
+  height: 58px;
   background-color: #000;
 }
 .page-wrapper {
@@ -37,7 +37,7 @@
     background: transparent url('') no-repeat center 0;
     width: 97.5%;
     background-size: 100%;
-    margin: 1.1vw;
+    margin: 1.4%;
 }
 .tv-show.golf {
     background-image: url('../images/golf.jpg') ;
@@ -69,8 +69,8 @@
 .xr-ll-drawer {
   position: absolute;
     top: 50%;
-    margin-top: -300px;
     right: 2vw;
+    margin-top: -300px;
 }
 .xr-ll-device {
   position: relative;
@@ -149,5 +149,21 @@ height: 116px;
 .xr-11-quadrant:nth-child(4) .xr-11-btn:nth-child(3) ~ .xr-11-btn {
   width: 22px;
 }
-
+@media screen and (min-width: 1025px) {
+  .nav-area {
+  position: fixed;
+    bottom: 0;
+    left: 0;
+  width: 100vw;
+  display: none;
+  }
+  .xr-ll-drawer {
+    display: none;
+  }
+  .tv-interface {
+    margin: 1ex auto;
+    width: 70vw;
+    height: 45.8vw;
+  }
+}
 
