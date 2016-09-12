@@ -7,23 +7,33 @@
 (function ($) {
     'use strict';
     var tvInterface = $('.tv-interface'),
-        $modalTrigger = $($('[aria-controls="youWin"]')[0]);
+        $modalTrigger = $($('[aria-controls="youWin"]')[0]),
+        buttonSequence = {
+            ccChallenge: {
+                steps: [
+                    NAME.remote.down,
+                    NAME.remote.ok
+                ],
+                classPrefix: 'cc'
+            },
+            sportChallenge: {
+                steps: [
+                    NAME.remote.c,
+                    NAME.remote.right
+                ],
+                classPrefix: 'sport'
+            }
+        }
     NAME.ccChallenge = function () {
-        console.log('foo bar');
-        var screens = tvInterface.find('[class|="cc"]'),
-            buttonSequence = [
-                NAME.remote.down,
-                NAME.remote.ok
-            ],
+        var screens = tvInterface.find('[class|="' + buttonSequence['ccChallenge'].classPrefix + '"]'),
             n = 0;
-            console.log(screens);
         $(document).on('keydown.ccChallenge', function (evt) {
             console.log(evt.keyCode);
-            if (evt.keyCode === buttonSequence[n]) {
+            if (evt.keyCode === buttonSequence['ccChallenge'].steps[n]) {
                 screens.hide();
-                screens.filter('.cc-step-' + (n + 1).toString()).show();
+                screens.filter('.' + buttonSequence['ccChallenge'].classPrefix + '-step-' + (n + 1).toString()).show();
                 n += 1;
-                if (n === buttonSequence.length) {
+                if (n === buttonSequence['ccChallenge'].steps.length) {
                     window.setTimeout(function () {
                         console.log('click the button');
                         $modalTrigger.show().click();
@@ -35,20 +45,15 @@
         });
     };
     NAME.sportChallenge = function () {
-    //function sportChallenge() {
-        var screens = tvInterface.find('[class|="sport"]'),
-            buttonSequence = [
-                NAME.remote.c,
-                NAME.remote.right
-            ],
+        var screens = tvInterface.find('[class|="' + buttonSequence['sportChallenge'].classPrefix + '"]'),
             n = 0;
         $(document).on('keydown.sportChallenge', function (evt) {
             console.log(evt.keyCode);
-            if (evt.keyCode === buttonSequence[n]) {
+            if (evt.keyCode === buttonSequence['sportChallenge'].steps[n]) {
                 screens.hide();
-                screens.filter('.sport-step-' + (n + 1).toString()).show();
+                screens.filter('.' + buttonSequence['sportChallenge'].classPrefix + '-step-' + (n + 1).toString()).show();
                 n += 1;
-                if (n === buttonSequence.length) {
+                if (n === buttonSequence['sportChallenge'].steps.length) {
                     window.setTimeout(function () {
                         console.log('click the button');
                         $modalTrigger.show().click();
