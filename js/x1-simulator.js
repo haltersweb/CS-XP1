@@ -23,42 +23,22 @@
                 ],
                 classPrefix: 'sport'
             }
-        }
-    NAME.ccChallenge = function () {
-        var screens = tvInterface.find('[class|="' + buttonSequence['ccChallenge'].classPrefix + '"]'),
+        };
+    NAME.challenge = function (challengeName) {
+        var screens = tvInterface.find('[class|="' + buttonSequence[challengeName].classPrefix + '"]'),
             n = 0;
-        $(document).on('keydown.ccChallenge', function (evt) {
+        $(document).on('keydown.' + challengeName, function (evt) {
             console.log(evt.keyCode);
-            if (evt.keyCode === buttonSequence['ccChallenge'].steps[n]) {
+            if (evt.keyCode === buttonSequence[challengeName].steps[n]) {
                 screens.hide();
-                screens.filter('.' + buttonSequence['ccChallenge'].classPrefix + '-step-' + (n + 1).toString()).show();
+                screens.filter('.' + buttonSequence[challengeName].classPrefix + '-step-' + (n + 1).toString()).show();
                 n += 1;
-                if (n === buttonSequence['ccChallenge'].steps.length) {
+                if (n === buttonSequence[challengeName].steps.length) {
                     window.setTimeout(function () {
                         console.log('click the button');
                         $modalTrigger.show().click();
                         $('[data-trigger="true"]').removeAttr('data-trigger').hide();
-                        $(document).off('keydown.ccChallenge');
-                    }, 750);
-                }
-            }
-        });
-    };
-    NAME.sportChallenge = function () {
-        var screens = tvInterface.find('[class|="' + buttonSequence['sportChallenge'].classPrefix + '"]'),
-            n = 0;
-        $(document).on('keydown.sportChallenge', function (evt) {
-            console.log(evt.keyCode);
-            if (evt.keyCode === buttonSequence['sportChallenge'].steps[n]) {
-                screens.hide();
-                screens.filter('.' + buttonSequence['sportChallenge'].classPrefix + '-step-' + (n + 1).toString()).show();
-                n += 1;
-                if (n === buttonSequence['sportChallenge'].steps.length) {
-                    window.setTimeout(function () {
-                        console.log('click the button');
-                        $modalTrigger.show().click();
-                        $('[data-trigger="true"]').removeAttr('data-trigger').hide();
-                        $(document).off('keydown.sportChallenge');
+                        $(document).off('keydown.' + challengeName);
                     }, 750);
                 }
             }
@@ -67,9 +47,9 @@
     function bindChallengeBtns() {
         var $buttons = $('.challenge-btn');
         $buttons.on('click', function () {
-            var functionName = $(this).attr('id');
-            console.log(functionName);
-            NAME[functionName]();
+            var challengeName = $(this).attr('id');
+            console.log(challengeName);
+            NAME.challenge(challengeName);
         });
     }
     bindChallengeBtns();
