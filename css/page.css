@@ -24,6 +24,19 @@
   fill: #fff;
     stroke: none;
 }
+.challenge-btn {
+      margin: 0;
+    padding: 0.5ex 1em 0.65ex;
+    border: 1px solid #2b9cd8;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 1em;
+}
+.challenge-btn:focus,
+.challenge-btn:hover {
+  background-color: #2b9cd8;
+}
 .tv-interface {
   margin: 4ex 0 0 -3vw;
     display: -webkit-flex;

@@ -9,7 +9,9 @@
     var xr11Buttons = $('[data-xr-11-keycode]');
     NAME.remote = {
         down: 40,
-        ok: 13
+        right: 39,
+        ok: 13,
+        c: 123
     };
     xr11Buttons.on('click', function () {
         console.log($(this).attr('data-xr-11-keycode'));
