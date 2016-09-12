@@ -12,7 +12,7 @@
     	var screens = tvInterface.find('img.cc'),
     		buttonSequence = [
     			NAME.remote.down,
-    			NAME.remote.enter
+    			NAME.remote.ok
     		],
     		n = 0;
     	$(document).on('keydown', function(evt) {
