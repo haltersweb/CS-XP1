@@ -15,9 +15,8 @@
 		<div class="page-wrapper" id="main" role="main" tabindex="-1">
 			<svg viewBox="0 0 107 40" preserveAspectRatio="xMidYMid meet" focusable="false" class="xfinity-logo"><g viewBox="0 0 107 40" class="style-scope iron-icon"><g transform="translate(0, 2)" class="style-scope iron-icon"><path d="M68,26.8V8h-4v20h4V26.8L68,26.8z M40,26.8V8h-4v20h4V26.8L40,26.8z M52,7.5c-2,0-2.9,1-4,2.3V8l-4,0v20l4,0V16.3c0-3.2,1.5-5.1,4.1-5.1c2.8,0,4,1.7,4,5.5V28h4V16.6c0-5.9-1.6-9.1-7-9.1H52z M74,11l0,12.2c0,3.6,1.7,5.7,5,5.7c1.1,0,2.2-0.1,3-0.4l0-3.5c-0.3,0.1-0.9,0.3-1.7,0.3c-1.8,0-2.3-0.7-2.3-2.5L78,11h5L82,7.9c0,0-0.8,0-1,0h-2.8l0-7.9l-4,2.9l0,5.1l-3-0.1l-0.1,3.1l2.7,0L74,11z M23.9,8h-2.1l-2.8,3l5-0.1L24,28h4l0.1-17l4.9,0l0-3l-5,0L28,6c0-1.5,1-2.3,1.5-2.3c0.8,0,1.8-0.1,3.5,0.3l0-3.2c-0.5-0.2-1.9-0.4-1.9-0.4s-0.4,0-0.5-0.1c-0.3,0-0.7-0.1-1.1-0.1c-3.3,0-5.5,1.9-5.5,5.6v1.9L23.9,8z M106,8L101,7.9L94,21.1l-5-13.2L84,8l7.1,17.5L86,35l5,0L106,8L106,8z M19.1,8l-5,0l-4.5,6.1L5.9,8L1,8.1l6,9.5L0,28l5,0l4.5-7l9.5,14l5,0l-12-17.4L19.1,8z" class="style-scope iron-icon"></path><path d="M101,26L101,26c0-1.6,1.3-3,3-3c1.7,0,3,1.3,3,3v0c0,1.6-1.3,3-3,3C102.3,29,101,27.6,101,26L101,26z M106.7,26L106.7,26c0-1.5-1.1-2.7-2.7-2.7c-1.5,0-2.7,1.2-2.7,2.7v0c0,1.5,1.1,2.7,2.7,2.7C105.5,28.7,106.7,27.5,106.7,26L106.7,26z M102.8,24.3h1.4c0.4,0,0.7,0.1,1,0.3c0.2,0.2,0.3,0.4,0.3,0.7v0c0,0.5-0.3,0.8-0.7,0.9l0.8,1.2h-0.7l-0.8-1.1h-0.7v1.1h-0.6V24.3L102.8,24.3z M104.2,25.9c0.4,0,0.6-0.2,0.6-0.5v0c0-0.3-0.2-0.5-0.6-0.5h-0.8v1H104.2L104.2,25.9z" class="style-scope iron-icon"></path></g></g></svg>
 			<h1>Test your skills</h1>
-			<p class="center-text">Choose a challenge. <button type="button" class="challenge-btn" id="ccChallenge">Closed Caption</button> <button type="button" class="challenge-btn" id="sportChallenge">Sports App</button></p>
-			<p id="ccChallengeText" class="center-text" style="display: none;">Turn on closed captioning in two steps.</p>
-			<p id="sportChallengeText" class="center-text" style="display: none;">Go to the baseball stats in the sports app.</p>
+			<p id="challengeChooser" class="center-text">Choose a challenge. <button type="button" class="challenge-btn" id="ccChallenge">Closed Caption</button> <button type="button" class="challenge-btn" id="sportChallenge">Sports App</button></p>
+			<p id="challengeText" class="center-text" style="display: none;"></p>
 			<div class="tv-interface">
 				<div class="tv-show golf">
 					<!-- closed caption challenge -->
@@ -116,27 +115,10 @@
 					</button>
 				</div>
 				<div class="badge-stats">
-					<svg id="a11yBadge" class="badge-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="presentation" focusable="false">
-						<circle fill="#FFFFFF" cx="50" cy="50" r="50"/>
-						<circle fill="#1A6992" cx="50" cy="50" r="48"/>
-						<circle fill="#FFFFFF" cx="50" cy="50" r="37"/>
-						<g>
-							<path fill="#1F6F9A" d="M28,62.9l-0.3-2.2h-0.1c-1.2,1.7-3,2.6-5,2.6c-3.4,0-5.9-2.9-5.9-6.9c0-5.9,5.2-8.3,10.3-8.4v-0.5
-								c0-1.7-1.1-3-3.2-3c-1.8,0-3.3,0.5-4.6,1.3l-1.1-4c1.2-0.7,3.9-1.7,7-1.7c6.9,0,8,4.8,8,9.3v8.4c0,1.8,0.1,3.6,0.4,5.2H28z
-								 M27.2,52c-2,0-4.8,0.7-4.8,3.8c0,2.3,1.2,3.1,2.2,3.1c1,0,2.1-0.6,2.5-1.9c0.1-0.3,0.1-0.7,0.1-1.1V52z"/>
-							<path fill="#1F6F9A" d="M40.4,38.7L40.4,38.7l-5.2,2.6l-1-4.7l6.9-3.5h5.3v29.9h-6V38.7z"/>
-							<path fill="#1F6F9A" d="M56.9,38.7L56.9,38.7l-5.2,2.6l-1-4.7l6.9-3.5h5.3v29.9h-6V38.7z"/>
-							<path fill="#1F6F9A" d="M72.9,40.4l2.2,11.7c0.2,1.3,0.4,2.6,0.6,3.8h0.1c0.2-1.2,0.4-2.4,0.6-3.7l1.9-11.8h5.9l-4.6,17.3
-								c-1.1,4.2-2.6,8.6-5,11.5c-1.9,2.2-4.2,3.3-5.1,3.5l-1.8-5.2c1.1-0.4,2.1-1.1,3-1.9c0.8-0.8,1.5-1.7,1.9-2.7c0.2-0.4,0.3-0.6,0.3-1
-								c0-0.3-0.1-0.6-0.2-0.8l-6.2-20.8H72.9z"/>
-						</g>
-					</svg>
-					<div class="xp">+1,000 XP</div>
+					<div class="badge-logo"></div>
+					<div class="xp"></div>
 				</div>
-				<div class="badge-info">
-					<h2>Congratulations!  You've just earned the accessibility badge!</h2>
-					<p><strong>DID YOU KNOW:</strong> The FCC requires that X1 must be usable by people with disabilities. For those who are deaf it is imperative that they are able to turn on closed captioning quickly.</p>
-					</div>
+				<div class="badge-info"></div>
 			</div>
 		</div>
 		<div class="block-screen"></div>

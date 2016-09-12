@@ -36,6 +36,9 @@
 	visibility: visible;
 	opacity: 1;
 	}
+.svg.close-dialog path {
+	fill: #ffffff;
+}
 [data-controls="tooltip"] {
 	display: inline-block;
 	position: relative;
