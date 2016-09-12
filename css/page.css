@@ -25,7 +25,7 @@
     stroke: none;
 }
 .tv-interface {
-  margin: 4ex auto;
+  margin: 4ex 0 0 -3vw;
     display: -webkit-flex;
     display: flex;
     width: 75vw;
@@ -68,9 +68,8 @@
 }
 .xr-ll-drawer {
   position: absolute;
-    top: 50%;
+    top: 160px;
     right: 2vw;
-    margin-top: -300px;
 }
 .xr-ll-device {
   position: relative;
@@ -148,6 +147,9 @@ height: 116px;
 }
 .xr-11-quadrant:nth-child(4) .xr-11-btn:nth-child(3) ~ .xr-11-btn {
   width: 22px;
+}
+@media screen and (min-width: 800px) {
+
 }
 @media screen and (min-width: 1025px) {
   .nav-area {
