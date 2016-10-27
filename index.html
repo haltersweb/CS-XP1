@@ -7,101 +7,20 @@
 	<link rel="stylesheet" href="css/normalization.css" />
 	<link rel="stylesheet" href="css/base.css" />
 	<link rel="stylesheet" href="css/dialog.css" />
-	<link rel="stylesheet" href="css/page.css" />
+	<link rel="stylesheet" href="css/fs-page.css" />
 </head>
 <body>
-	<div class="container">
-		<div class="nav-area"></div>
-		<div class="page-wrapper" id="main" role="main" tabindex="-1">
-			<svg viewBox="0 0 107 40" preserveAspectRatio="xMidYMid meet" focusable="false" class="xfinity-logo"><g viewBox="0 0 107 40" class="style-scope iron-icon"><g transform="translate(0, 2)" class="style-scope iron-icon"><path d="M68,26.8V8h-4v20h4V26.8L68,26.8z M40,26.8V8h-4v20h4V26.8L40,26.8z M52,7.5c-2,0-2.9,1-4,2.3V8l-4,0v20l4,0V16.3c0-3.2,1.5-5.1,4.1-5.1c2.8,0,4,1.7,4,5.5V28h4V16.6c0-5.9-1.6-9.1-7-9.1H52z M74,11l0,12.2c0,3.6,1.7,5.7,5,5.7c1.1,0,2.2-0.1,3-0.4l0-3.5c-0.3,0.1-0.9,0.3-1.7,0.3c-1.8,0-2.3-0.7-2.3-2.5L78,11h5L82,7.9c0,0-0.8,0-1,0h-2.8l0-7.9l-4,2.9l0,5.1l-3-0.1l-0.1,3.1l2.7,0L74,11z M23.9,8h-2.1l-2.8,3l5-0.1L24,28h4l0.1-17l4.9,0l0-3l-5,0L28,6c0-1.5,1-2.3,1.5-2.3c0.8,0,1.8-0.1,3.5,0.3l0-3.2c-0.5-0.2-1.9-0.4-1.9-0.4s-0.4,0-0.5-0.1c-0.3,0-0.7-0.1-1.1-0.1c-3.3,0-5.5,1.9-5.5,5.6v1.9L23.9,8z M106,8L101,7.9L94,21.1l-5-13.2L84,8l7.1,17.5L86,35l5,0L106,8L106,8z M19.1,8l-5,0l-4.5,6.1L5.9,8L1,8.1l6,9.5L0,28l5,0l4.5-7l9.5,14l5,0l-12-17.4L19.1,8z" class="style-scope iron-icon"></path><path d="M101,26L101,26c0-1.6,1.3-3,3-3c1.7,0,3,1.3,3,3v0c0,1.6-1.3,3-3,3C102.3,29,101,27.6,101,26L101,26z M106.7,26L106.7,26c0-1.5-1.1-2.7-2.7-2.7c-1.5,0-2.7,1.2-2.7,2.7v0c0,1.5,1.1,2.7,2.7,2.7C105.5,28.7,106.7,27.5,106.7,26L106.7,26z M102.8,24.3h1.4c0.4,0,0.7,0.1,1,0.3c0.2,0.2,0.3,0.4,0.3,0.7v0c0,0.5-0.3,0.8-0.7,0.9l0.8,1.2h-0.7l-0.8-1.1h-0.7v1.1h-0.6V24.3L102.8,24.3z M104.2,25.9c0.4,0,0.6-0.2,0.6-0.5v0c0-0.3-0.2-0.5-0.6-0.5h-0.8v1H104.2L104.2,25.9z" class="style-scope iron-icon"></path></g></g></svg>
-			<h1>Test your skills</h1>
-			<div class="tv-interface">
-				<div class="tv-show golf">
-					<!-- start challenge -->
-					<img src="images/cc-start.png" alt="" class="cc-start" id="challengeStart" style="display: block;" />
-					<!-- closed caption challenge -->
-					<img src="images/cc-challenge-down.png" alt="x1 sub menu" class="cc-step-1" />
-					<img src="images/cc-challenge-ok.png" alt="closed caption off" class="cc-step-2" />
-					<img src="images/cc-challenge-ok2.png" alt="closed caption on" class="cc-step-3" />
-					<!-- you won -->
-					<img src="images/cc-end.png" alt="" class="cc-end" id="challengeEnd" />
-				</div>
-			</div>
-			<div class="xr-ll-drawer">
-				<button type="button" class="toggle-xr-11" style="display: none;"><span class="screen-reader-text">show remote control</span></button>
-				<div class="xr-ll-device">
-					<div class="xr-11-quadrant">
-						<!-- row 1 -->
-						<button type="button" class="xr-11-btn" data-xr-11-btn="tv-power"><span class="screen-reader-text">TV Power</span></button>
-						<div class="xr-11-btn"></div>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="all-power"><span class="screen-reader-text">All Power</span></button>
-						<!-- row 2 -->
-						<button type="button" class="xr-11-btn" data-xr-11-btn="volume-up"><span class="screen-reader-text">Volume Up</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="mute"><span class="screen-reader-text">Mute</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="channel-up" data-xr-11-keycode="187"><span class="screen-reader-text">Channel Up</span></button>
-						<!-- row 3 -->
-						<button type="button" class="xr-11-btn" data-xr-11-btn="volume-down"><span class="screen-reader-text">Volume Down</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="replay" data-xr-11-keycode="220"><span class="screen-reader-text">Replay</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="channel-down" data-xr-11-keycode="189"><span class="screen-reader-text">Channel Down</span></button>
-					</div>
-					<div class="xr-11-quadrant">
-						<!-- row 4 -->
-						<button type="button" class="xr-11-btn" data-xr-11-btn="rewind" data-xr-11-keycode="82"><span class="screen-reader-text">Rewind</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="play-pause" data-xr-11-keycode="80"><span class="screen-reader-text">Play/Pause</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="fast-forward" data-xr-11-keycode="70"><span class="screen-reader-text">Fast Forward</span></button>
-						<!-- row 5 -->
-						<button type="button" class="xr-11-btn" data-xr-11-btn="exit" data-xr-11-keycode="27"><span class="screen-reader-text">Exit</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="mike"><span class="screen-reader-text">Microphone</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="record" data-xr-11-keycode="83"><span class="screen-reader-text">Record</span></button>
-						<!-- row 6 -->
-						<button type="button" class="xr-11-btn" data-xr-11-btn="guide" data-xr-11-keycode="71"><span class="screen-reader-text">Guide</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="menu" data-xr-11-keycode="77"><span class="screen-reader-text">Menu</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="page-up" data-xr-11-keycode="33"><span class="screen-reader-text">Page Up</span></button>
-					</div>
-					<div class="xr-11-quadrant">
-						<!-- row 7 -->
-						<button type="button" class="xr-11-btn" data-xr-11-btn="up" data-xr-11-keycode="38"><span class="screen-reader-text">Up</span></button>
-						<!-- row 8 -->
-						<button type="button" class="xr-11-btn" data-xr-11-btn="left" data-xr-11-keycode="37"><span class="screen-reader-text">Left</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="ok" data-xr-11-keycode="13"><span class="screen-reader-text">OK</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="right" data-xr-11-keycode="39"><span class="screen-reader-text">Right</span></button>
-						<!-- row 9 -->
-						<button type="button" class="xr-11-btn" data-xr-11-btn="down" data-xr-11-keycode="40"><span class="screen-reader-text">Down</span></button>
-					</div>
-					<div class="xr-11-quadrant">
-						<!-- row 10 -->
-						<button type="button" class="xr-11-btn" data-xr-11-btn="last" data-xr-11-keycode="8"><span class="screen-reader-text">Last</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="info" data-xr-11-keycode="73"><span class="screen-reader-text">Info</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="page-down" data-xr-11-keycode="34"><span class="screen-reader-text">Page Down</span></button>
-						<!-- row 11 -->
-						<button type="button" class="xr-11-btn" data-xr-11-btn="a"><span class="screen-reader-text">A</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="b" data-xr-11-keycode="66"><span class="screen-reader-text">B</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="c" data-xr-11-keycode="123"><span class="screen-reader-text">C</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="d"><span class="screen-reader-text">D</span></button>
-					</div>
-					<div class="xr-11-quadrant">
-						<!-- row 12 -->
-						<button type="button" class="xr-11-btn" data-xr-11-btn="num-1" data-xr-11-keycode="49"><span class="screen-reader-text">1</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="num-2" data-xr-11-keycode="50"><span class="screen-reader-text">2</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="num-3" data-xr-11-keycode="51"><span class="screen-reader-text">3</span></button>
-						<!-- row 13 -->
-						<button type="button" class="xr-11-btn" data-xr-11-btn="num-4" data-xr-11-keycode="52"><span class="screen-reader-text">4</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="num-5" data-xr-11-keycode="53"><span class="screen-reader-text">5</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="num-6" data-xr-11-keycode="54"><span class="screen-reader-text">6</span></button>
-						<!-- row 14 -->
-						<button type="button" class="xr-11-btn" data-xr-11-btn="num-7" data-xr-11-keycode="55"><span class="screen-reader-text">7</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="num-8" data-xr-11-keycode="56"><span class="screen-reader-text">8</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="num-9" data-xr-11-keycode="57"><span class="screen-reader-text">9</span></button>
-						<!-- row 15 -->
-						<button type="button" class="xr-11-btn" data-xr-11-btn="setup"><span class="screen-reader-text">Setup</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="num-0" data-xr-11-keycode="48"><span class="screen-reader-text">0</span></button>
-						<button type="button" class="xr-11-btn" data-xr-11-btn="tv-output"><span class="screen-reader-text">TV Output</span></button>
-					</div>
-				</div>
-			</div>
+	<div class="container tv-interface">
+		<div class="tv-show golf">
+			<!-- start challenge -->
+			<img src="images/cc-start.png" alt="" class="cc-start" id="challengeStart" style="display: block;" />
+			<!-- closed caption challenge -->
+			<img src="images/cc-challenge-down.png" alt="x1 sub menu" class="cc-step-1" />
+			<img src="images/cc-challenge-ok.png" alt="closed caption off" class="cc-step-2" />
+			<img src="images/cc-challenge-ok2.png" alt="closed caption on" class="cc-step-3" />
+			<!-- you won -->
+			<img src="images/cc-end.png" alt="" class="cc-end" id="challengeEnd" />
 		</div>
-		<div aria-live="polite" class="screen-reader-text"></div>
-		<div role="alert" class="screen-reader-text"></div>
 	</div>
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="js/namespacing.js"></script>

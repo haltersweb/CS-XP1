@@ -1,0 +1,39 @@
+/* Page component structure
+---------------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+}
+.tv-show.golf {
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+  height: 56vw;
+  margin-top: -28vw;
+  background: url('../images/golf.jpg') left top no-repeat;
+  background-size: contain;
+}
+.tv-show img {
+  display: none;
+  width: 100%;
+}
+.modal.badge-announcement {
+  overflow: hidden;
+}
+.badge-stats {
+  overflow: hidden;
+  float: left;
+  width: 35%;
+  padding-right: 7%;
+  text-align: center;
+}
+.badge-info {
+  overflow: hidden;
+}
+.badge-icon {
+  margin-bottom: 1.5ex;
+}
+
+
