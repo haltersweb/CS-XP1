@@ -8,7 +8,6 @@
     'use strict';
     var $tvInterface = $('.tv-interface'),
         $challengeStart = $('#challengeStart'),
-        $challengeSteps = $('[class^="cc-step"]'),
         $challengeEnd = $('#challengeEnd'),
         buttonSequence = {
             ccChallenge: {
@@ -19,15 +18,10 @@
                 classPrefix: 'cc'
             }
         };
-    function startChallenge() {
-        $(document).on('keydown.startChallenge', function (evt) {
-            console.log(evt.keyCode);
-            if (evt.keyCode === NAME.remote.ok) {
-                $challengeStart.hide();
-                $(document).off('keydown.startChallenge');
-                challenge('ccChallenge');
-            }
-        });
+    function hideImages() {
+        window.setTimeout(function () {
+            $tvInterface.find('img').removeClass('show');
+        }, 2000);
     }
     function challenge(challengeName) {
         var $screens = $tvInterface.find('[class|="' + buttonSequence[challengeName].classPrefix + '"]'),
@@ -35,16 +29,26 @@
         $(document).on('keydown.' + challengeName, function (evt) {
             console.log(evt.keyCode);
             if (evt.keyCode === buttonSequence[challengeName].steps[n]) {
-                $screens.hide();
-                $screens.filter('.' + buttonSequence[challengeName].classPrefix + '-step-' + (n + 1).toString()).show();
+                $screens.removeClass('show');
+                $screens.filter('.' + buttonSequence[challengeName].classPrefix + '-step-' + (n + 1).toString()).addClass('show');
                 n += 1;
                 if (n === buttonSequence[challengeName].steps.length) {
                     window.setTimeout(function () {
-                        $challengeSteps.hide();
-                        $challengeEnd.show();
+                        $challengeEnd.addClass('show');
                         $(document).off('keydown.' + challengeName);
-                    }, 750);
+                        hideImages();
+                    }, 1000);
                 }
+            }
+        });
+    }
+    function startChallenge() {
+        $(document).on('keydown.startChallenge', function (evt) {
+            console.log(evt.keyCode);
+            if (evt.keyCode === NAME.remote.ok) {
+                $challengeStart.removeClass('show');
+                $(document).off('keydown.startChallenge');
+                challenge('ccChallenge');
             }
         });
     }
